@@ -15,10 +15,11 @@
 #include <ctype.h>
 #include <string.h>
 #include "tokens.h"
+#include <stdlib.h>
 #define TRUE 1
 #define FALSE 0
 
-main(argc,argv)
+int main(argc,argv)
 int argc;
 char *argv[3];
 {  char *fname;
@@ -108,7 +109,7 @@ char buffer[81];  /* fixed array length MONI */ /* to store the token temporar *
 
 static int is_spec_symbol();
 static int is_token_end();
-static unget_error();
+static int unget_error();
 static int is_keyword();
 static int is_identifier();
 static int is_num_constant();
@@ -419,7 +420,7 @@ static int is_identifier(str)
 /* INPUT:       a pointer to token stream */
 /* OUTPUT: 	print error message       */
 /******************************************/
-static unget_error(fp)
+static int unget_error(fp)
 character_stream *fp;
 {
 fprintf(stdout,"It can not get charcter\n");

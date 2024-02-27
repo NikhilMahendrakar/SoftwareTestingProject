@@ -2,13 +2,15 @@
 
 extern void	exit();
 # include <stdio.h>
+# include <ctype.h>
+#include <stdlib.h>
 
 void	Caseerror();
 
 typedef char	bool;
 # define false 0
 # define true  1
-# define NULL 0
+// # define NULL 0
 
 # define MAXSTR 100
 # define MAXPAT MAXSTR
@@ -385,7 +387,7 @@ omatch(lin, i, pat, j)
 }
 
 
-patsize(pat, n)
+int patsize(pat, n)
 	char*	pat;
 	int	n;
 {
@@ -517,7 +519,7 @@ char *pat, *sub;
     }
 }
 
-main(argc, argv)
+int main(argc, argv)
 int	argc;
 char	*argv[];
 {

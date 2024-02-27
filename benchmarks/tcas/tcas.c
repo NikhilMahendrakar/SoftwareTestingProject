@@ -14,10 +14,13 @@
 				/* variables */
 
 typedef int bool;
+ 
+ # include <stdlib.h>
 
 int Cur_Vertical_Sep;
 bool High_Confidence;
 bool Two_of_Three_Reports_Valid;
+
 
 int Own_Tracked_Alt;
 int Own_Tracked_Alt_Rate;
@@ -63,6 +66,16 @@ int Inhibit_Biased_Climb ()
     return (Climb_Inhibit ? Up_Separation + NOZCROSS : Up_Separation);
 }
 
+bool Own_Below_Threat()
+{
+    return (Own_Tracked_Alt < Other_Tracked_Alt);
+}
+
+bool Own_Above_Threat()
+{
+    return (Other_Tracked_Alt < Own_Tracked_Alt);
+}
+
 bool Non_Crossing_Biased_Climb()
 {
     int upward_preferred;
@@ -99,15 +112,15 @@ bool Non_Crossing_Biased_Descend()
     return result;
 }
 
-bool Own_Below_Threat()
-{
-    return (Own_Tracked_Alt < Other_Tracked_Alt);
-}
+// bool Own_Below_Threat()
+// {
+//     return (Own_Tracked_Alt < Other_Tracked_Alt);
+// }
 
-bool Own_Above_Threat()
-{
-    return (Other_Tracked_Alt < Own_Tracked_Alt);
-}
+// bool Own_Above_Threat()
+// {
+//     return (Other_Tracked_Alt < Own_Tracked_Alt);
+// }
 
 int alt_sep_test()
 {
@@ -141,7 +154,7 @@ int alt_sep_test()
     return alt_sep;
 }
 
-main(argc, argv)
+int main(argc, argv)
 int argc;
 char *argv[];
 {

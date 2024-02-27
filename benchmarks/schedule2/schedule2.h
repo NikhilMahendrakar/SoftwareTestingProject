@@ -40,7 +40,7 @@
 
 extern int get_command(/* int *command, *prio, float *ratio */);
 			  /* Get command from stdin. Return 0 on EOF */
-extern exit_here(/* int status */); /* Exit program with abs(status) */
+extern int exit_here(/* int status */); /* Exit program with abs(status) */
 
 extern int enqueue(/* int prio, struct process * job */);
                      /* Put job at end of queue & reschedule */

@@ -1,0 +1,24 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/nikhil/Documents/CS206_SoftwareTesting/SoftwareTestingProject/cs206-project-defectdetective/benchmarks/totinfo/totinfo'
+relocations:
+  - { offsetInCU: 0x153, offset: 0x153, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002FB8, symSize: 0x3CC }
+  - { offsetInCU: 0xA7, offset: 0xA7, size: 0x8, addend: 0x0, symName: _line, symObjAddr: 0x2AA0, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0xC7, offset: 0xC7, size: 0x8, addend: 0x0, symName: _f, symObjAddr: 0x2BA0, symBinAddr: 0x100008100, symSize: 0x0 }
+  - { offsetInCU: 0xDD, offset: 0xDD, size: 0x8, addend: 0x0, symName: _r, symObjAddr: 0x4AE0, symBinAddr: 0x10000A040, symSize: 0x0 }
+  - { offsetInCU: 0xF3, offset: 0xF3, size: 0x8, addend: 0x0, symName: _c, symObjAddr: 0x4AE4, symBinAddr: 0x10000A044, symSize: 0x0 }
+  - { offsetInCU: 0x12A, offset: 0x12A, size: 0x8, addend: 0x0, symName: _InfoTbl, symObjAddr: 0x8D4, symBinAddr: 0x10000388C, symSize: 0x3DC }
+  - { offsetInCU: 0x325, offset: 0x325, size: 0x8, addend: 0x0, symName: _QChiSq, symObjAddr: 0x894, symBinAddr: 0x10000384C, symSize: 0x40 }
+  - { offsetInCU: 0x32D, offset: 0x32D, size: 0x8, addend: 0x0, symName: _InfoTbl, symObjAddr: 0x8D4, symBinAddr: 0x10000388C, symSize: 0x3DC }
+  - { offsetInCU: 0x366, offset: 0x366, size: 0x8, addend: 0x0, symName: _QGamma, symObjAddr: 0x838, symBinAddr: 0x1000037F0, symSize: 0x5C }
+  - { offsetInCU: 0x36E, offset: 0x36E, size: 0x8, addend: 0x0, symName: _QChiSq, symObjAddr: 0x894, symBinAddr: 0x10000384C, symSize: 0x40 }
+  - { offsetInCU: 0x3A2, offset: 0x3A2, size: 0x8, addend: 0x0, symName: _gcf, symObjAddr: 0x648, symBinAddr: 0x100003600, symSize: 0x1F0 }
+  - { offsetInCU: 0x3AA, offset: 0x3AA, size: 0x8, addend: 0x0, symName: _QGamma, symObjAddr: 0x838, symBinAddr: 0x1000037F0, symSize: 0x5C }
+  - { offsetInCU: 0x4B0, offset: 0x4B0, size: 0x8, addend: 0x0, symName: _gser, symObjAddr: 0x500, symBinAddr: 0x1000034B8, symSize: 0x148 }
+  - { offsetInCU: 0x4B8, offset: 0x4B8, size: 0x8, addend: 0x0, symName: _gcf, symObjAddr: 0x648, symBinAddr: 0x100003600, symSize: 0x1F0 }
+  - { offsetInCU: 0x52F, offset: 0x52F, size: 0x8, addend: 0x0, symName: _LGamma, symObjAddr: 0x3CC, symBinAddr: 0x100003384, symSize: 0x134 }
+  - { offsetInCU: 0x537, offset: 0x537, size: 0x8, addend: 0x0, symName: _gser, symObjAddr: 0x500, symBinAddr: 0x1000034B8, symSize: 0x148 }
+  - { offsetInCU: 0x55D, offset: 0x55D, size: 0x8, addend: 0x0, symName: _cof.0, symObjAddr: 0xDE0, symBinAddr: 0x100003E28, symSize: 0x0 }
+  - { offsetInCU: 0x5D3, offset: 0x5D3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002FB8, symSize: 0x3CC }
+  - { offsetInCU: 0x5DB, offset: 0x5DB, size: 0x8, addend: 0x0, symName: _LGamma, symObjAddr: 0x3CC, symBinAddr: 0x100003384, symSize: 0x134 }
+...

@@ -2,10 +2,11 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /* A job descriptor. */
 
-#define NULL 0
+// #define NULL 0
 
 
 #define NEW_JOB        1

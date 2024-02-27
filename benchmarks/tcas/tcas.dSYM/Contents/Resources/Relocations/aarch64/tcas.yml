@@ -1,0 +1,36 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/nikhil/Documents/CS206_SoftwareTesting/SoftwareTestingProject/cs206-project-defectdetective/benchmarks/tcas/tcas'
+relocations:
+  - { offsetInCU: 0x14A, offset: 0x14A, size: 0x8, addend: 0x0, symName: _initialize, symObjAddr: 0x0, symBinAddr: 0x100003684, symSize: 0x48 }
+  - { offsetInCU: 0xB0, offset: 0xB0, size: 0x8, addend: 0x0, symName: _Cur_Vertical_Sep, symObjAddr: 0x1F9C, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0xC6, offset: 0xC6, size: 0x8, addend: 0x0, symName: _High_Confidence, symObjAddr: 0x1FA0, symBinAddr: 0x100008004, symSize: 0x0 }
+  - { offsetInCU: 0xE8, offset: 0xE8, size: 0x8, addend: 0x0, symName: _Two_of_Three_Reports_Valid, symObjAddr: 0x1FA4, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offsetInCU: 0xF4, offset: 0xF4, size: 0x8, addend: 0x0, symName: _Own_Tracked_Alt, symObjAddr: 0x1FA8, symBinAddr: 0x10000800C, symSize: 0x0 }
+  - { offsetInCU: 0x110, offset: 0x110, size: 0x8, addend: 0x0, symName: _Own_Tracked_Alt_Rate, symObjAddr: 0x1FAC, symBinAddr: 0x100008010, symSize: 0x0 }
+  - { offsetInCU: 0x124, offset: 0x124, size: 0x8, addend: 0x0, symName: _Other_Tracked_Alt, symObjAddr: 0x1FB0, symBinAddr: 0x100008014, symSize: 0x0 }
+  - { offsetInCU: 0x139, offset: 0x139, size: 0x8, addend: 0x0, symName: _Alt_Layer_Value, symObjAddr: 0x1FB4, symBinAddr: 0x100008018, symSize: 0x0 }
+  - { offsetInCU: 0x163, offset: 0x163, size: 0x8, addend: 0x0, symName: _Positive_RA_Alt_Thresh, symObjAddr: 0x1FB8, symBinAddr: 0x10000801C, symSize: 0x0 }
+  - { offsetInCU: 0x171, offset: 0x171, size: 0x8, addend: 0x0, symName: _Up_Separation, symObjAddr: 0x1FC8, symBinAddr: 0x10000802C, symSize: 0x0 }
+  - { offsetInCU: 0x18A, offset: 0x18A, size: 0x8, addend: 0x0, symName: _Down_Separation, symObjAddr: 0x1FCC, symBinAddr: 0x100008030, symSize: 0x0 }
+  - { offsetInCU: 0x19B, offset: 0x19B, size: 0x8, addend: 0x0, symName: _Other_RAC, symObjAddr: 0x1FD0, symBinAddr: 0x100008034, symSize: 0x0 }
+  - { offsetInCU: 0x1B9, offset: 0x1B9, size: 0x8, addend: 0x0, symName: _Other_Capability, symObjAddr: 0x1FD4, symBinAddr: 0x100008038, symSize: 0x0 }
+  - { offsetInCU: 0x1CD, offset: 0x1CD, size: 0x8, addend: 0x0, symName: _Climb_Inhibit, symObjAddr: 0x1FD8, symBinAddr: 0x10000803C, symSize: 0x0 }
+  - { offsetInCU: 0x1D9, offset: 0x1D9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x42C, symBinAddr: 0x100003AB0, symSize: 0x290 }
+  - { offsetInCU: 0x227, offset: 0x227, size: 0x8, addend: 0x0, symName: _alt_sep_test, symObjAddr: 0x2A0, symBinAddr: 0x100003924, symSize: 0x18C }
+  - { offsetInCU: 0x22F, offset: 0x22F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x42C, symBinAddr: 0x100003AB0, symSize: 0x290 }
+  - { offsetInCU: 0x2B2, offset: 0x2B2, size: 0x8, addend: 0x0, symName: _Non_Crossing_Biased_Descend, symObjAddr: 0x1C8, symBinAddr: 0x10000384C, symSize: 0xD8 }
+  - { offsetInCU: 0x2BA, offset: 0x2BA, size: 0x8, addend: 0x0, symName: _alt_sep_test, symObjAddr: 0x2A0, symBinAddr: 0x100003924, symSize: 0x18C }
+  - { offsetInCU: 0x2FC, offset: 0x2FC, size: 0x8, addend: 0x0, symName: _Non_Crossing_Biased_Climb, symObjAddr: 0xF0, symBinAddr: 0x100003774, symSize: 0xD8 }
+  - { offsetInCU: 0x304, offset: 0x304, size: 0x8, addend: 0x0, symName: _Non_Crossing_Biased_Descend, symObjAddr: 0x1C8, symBinAddr: 0x10000384C, symSize: 0xD8 }
+  - { offsetInCU: 0x33F, offset: 0x33F, size: 0x8, addend: 0x0, symName: _Own_Above_Threat, symObjAddr: 0xC8, symBinAddr: 0x10000374C, symSize: 0x28 }
+  - { offsetInCU: 0x347, offset: 0x347, size: 0x8, addend: 0x0, symName: _Non_Crossing_Biased_Climb, symObjAddr: 0xF0, symBinAddr: 0x100003774, symSize: 0xD8 }
+  - { offsetInCU: 0x35F, offset: 0x35F, size: 0x8, addend: 0x0, symName: _Own_Below_Threat, symObjAddr: 0xA0, symBinAddr: 0x100003724, symSize: 0x28 }
+  - { offsetInCU: 0x367, offset: 0x367, size: 0x8, addend: 0x0, symName: _Own_Above_Threat, symObjAddr: 0xC8, symBinAddr: 0x10000374C, symSize: 0x28 }
+  - { offsetInCU: 0x383, offset: 0x383, size: 0x8, addend: 0x0, symName: _Inhibit_Biased_Climb, symObjAddr: 0x68, symBinAddr: 0x1000036EC, symSize: 0x38 }
+  - { offsetInCU: 0x38B, offset: 0x38B, size: 0x8, addend: 0x0, symName: _Own_Below_Threat, symObjAddr: 0xA0, symBinAddr: 0x100003724, symSize: 0x28 }
+  - { offsetInCU: 0x393, offset: 0x393, size: 0x8, addend: 0x0, symName: _ALIM, symObjAddr: 0x48, symBinAddr: 0x1000036CC, symSize: 0x20 }
+  - { offsetInCU: 0x39B, offset: 0x39B, size: 0x8, addend: 0x0, symName: _Inhibit_Biased_Climb, symObjAddr: 0x68, symBinAddr: 0x1000036EC, symSize: 0x38 }
+  - { offsetInCU: 0x3B5, offset: 0x3B5, size: 0x8, addend: 0x0, symName: _initialize, symObjAddr: 0x0, symBinAddr: 0x100003684, symSize: 0x48 }
+  - { offsetInCU: 0x3BD, offset: 0x3BD, size: 0x8, addend: 0x0, symName: _ALIM, symObjAddr: 0x48, symBinAddr: 0x1000036CC, symSize: 0x20 }
+...

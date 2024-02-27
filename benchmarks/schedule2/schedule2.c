@@ -15,6 +15,8 @@
 
 #include <stdio.h>
 #include "schedule2.h"
+#include <stdlib.h>
+#include <string.h>
 
 static struct process * current_job;
 static int next_pid = 0;
@@ -39,7 +41,7 @@ static struct queue prio_queue[MAXPRIO + 1]; /* blocked queue is [0] */
 
 
 
-main(argc, argv) /* n3, n2, n1 : # of processes at prio3 ... */
+int main(argc, argv) /* n3, n2, n1 : # of processes at prio3 ... */
 int argc;
 char *argv[];
 {
@@ -95,7 +97,7 @@ get_command(command, prio, ratio)
     else return(FALSE);
 }
 
-exit_here(status)
+int exit_here(status)
      int status;
 {
     exit(abs(status));

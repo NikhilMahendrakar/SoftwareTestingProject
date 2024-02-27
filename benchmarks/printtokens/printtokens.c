@@ -1,6 +1,8 @@
 
 
 # include <ctype.h>
+# include <stdlib.h>
+#include <string.h>
 
 # define START  5
 # define TRUE  1
@@ -22,7 +24,42 @@ static int constant(int state,char token_str[],int token_ind);
 static int next_state();
 static void get_actual_token(char token_str[],int token_ind);
 
-main(argc,argv)
+BOOLEAN print_token(token_ptr)
+token token_ptr;
+{
+     switch(token_ptr->token_id)
+     {    /* Print the respective tokens. */
+          case ERROR : fprintf(stdout, "error,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
+                       fprintf(stdout, "\".\n");return(TRUE);
+          case EOTSTREAM : fprintf(stdout, "eof.\n");return(TRUE);
+          case 6 : fprintf(stdout, "keyword,\t\"lambda\".\n");return(TRUE);
+          case 9 : fprintf(stdout, "keyword,\t\"and\".\n");return(TRUE);
+          case 11: fprintf(stdout, "keyword,\t\"or\".\n");return(TRUE);
+          case 13: fprintf(stdout, "keyword,\t\"if\".\n");return(TRUE);
+          case 16: fprintf(stdout, "keyword,\t\"xor\".\n");return(TRUE);
+          case 17: fprintf(stdout, "identifier,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
+                   fprintf(stdout, "\".\n");return(TRUE);
+          case 18: fprintf(stdout, "numeric,\t");fprintf(stdout, "%s",token_ptr->token_string);
+                   fprintf(stdout, ".\n");return(TRUE);
+          case 19: fprintf(stdout, "lparen.\n");return(TRUE);
+          case 20: fprintf(stdout, "rparen.\n");return(TRUE);
+          case 21: fprintf(stdout, "lsquare.\n");return(TRUE);
+          case 22: fprintf(stdout, "rsquare.\n");return(TRUE);
+          case 23: fprintf(stdout, "quote.\n");return(TRUE);
+          case 24: fprintf(stdout, "bquote.\n");return(TRUE);
+          case 25: fprintf(stdout, "comma.\n");return(TRUE);
+          case 27: fprintf(stdout, "string,\t");fprintf(stdout, "%s",token_ptr->token_string);
+                   fprintf(stdout, ".\n");return(TRUE);
+          case 29: fprintf(stdout, "character,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
+                   fprintf(stdout, "\".\n");return(TRUE);
+          case 32: fprintf(stdout, "keyword,\t\"=>\".\n");return(TRUE);
+          default: break;
+      }
+      return(FALSE);
+}
+
+
+int main(argc,argv)
 int argc;
 char *argv[];
 {
@@ -500,39 +537,39 @@ token t;
                    and it is the limitation of the program.
  * ******************************************************************** */
 
-BOOLEAN print_token(token_ptr)
-token token_ptr;
-{
-     switch(token_ptr->token_id)
-     {    /* Print the respective tokens. */
-          case ERROR : fprintf(stdout, "error,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
-                       fprintf(stdout, "\".\n");return(TRUE);
-          case EOTSTREAM : fprintf(stdout, "eof.\n");return(TRUE);
-          case 6 : fprintf(stdout, "keyword,\t\"lambda\".\n");return(TRUE);
-          case 9 : fprintf(stdout, "keyword,\t\"and\".\n");return(TRUE);
-          case 11: fprintf(stdout, "keyword,\t\"or\".\n");return(TRUE);
-          case 13: fprintf(stdout, "keyword,\t\"if\".\n");return(TRUE);
-          case 16: fprintf(stdout, "keyword,\t\"xor\".\n");return(TRUE);
-          case 17: fprintf(stdout, "identifier,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
-                   fprintf(stdout, "\".\n");return(TRUE);
-          case 18: fprintf(stdout, "numeric,\t");fprintf(stdout, "%s",token_ptr->token_string);
-                   fprintf(stdout, ".\n");return(TRUE);
-          case 19: fprintf(stdout, "lparen.\n");return(TRUE);
-          case 20: fprintf(stdout, "rparen.\n");return(TRUE);
-          case 21: fprintf(stdout, "lsquare.\n");return(TRUE);
-          case 22: fprintf(stdout, "rsquare.\n");return(TRUE);
-          case 23: fprintf(stdout, "quote.\n");return(TRUE);
-          case 24: fprintf(stdout, "bquote.\n");return(TRUE);
-          case 25: fprintf(stdout, "comma.\n");return(TRUE);
-          case 27: fprintf(stdout, "string,\t");fprintf(stdout, "%s",token_ptr->token_string);
-                   fprintf(stdout, ".\n");return(TRUE);
-          case 29: fprintf(stdout, "character,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
-                   fprintf(stdout, "\".\n");return(TRUE);
-          case 32: fprintf(stdout, "keyword,\t\"=>\".\n");return(TRUE);
-          default: break;
-      }
-      return(FALSE);
-}
+// BOOLEAN print_token(token_ptr)
+// token token_ptr;
+// {
+//      switch(token_ptr->token_id)
+//      {    /* Print the respective tokens. */
+//           case ERROR : fprintf(stdout, "error,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
+//                        fprintf(stdout, "\".\n");return(TRUE);
+//           case EOTSTREAM : fprintf(stdout, "eof.\n");return(TRUE);
+//           case 6 : fprintf(stdout, "keyword,\t\"lambda\".\n");return(TRUE);
+//           case 9 : fprintf(stdout, "keyword,\t\"and\".\n");return(TRUE);
+//           case 11: fprintf(stdout, "keyword,\t\"or\".\n");return(TRUE);
+//           case 13: fprintf(stdout, "keyword,\t\"if\".\n");return(TRUE);
+//           case 16: fprintf(stdout, "keyword,\t\"xor\".\n");return(TRUE);
+//           case 17: fprintf(stdout, "identifier,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
+//                    fprintf(stdout, "\".\n");return(TRUE);
+//           case 18: fprintf(stdout, "numeric,\t");fprintf(stdout, "%s",token_ptr->token_string);
+//                    fprintf(stdout, ".\n");return(TRUE);
+//           case 19: fprintf(stdout, "lparen.\n");return(TRUE);
+//           case 20: fprintf(stdout, "rparen.\n");return(TRUE);
+//           case 21: fprintf(stdout, "lsquare.\n");return(TRUE);
+//           case 22: fprintf(stdout, "rsquare.\n");return(TRUE);
+//           case 23: fprintf(stdout, "quote.\n");return(TRUE);
+//           case 24: fprintf(stdout, "bquote.\n");return(TRUE);
+//           case 25: fprintf(stdout, "comma.\n");return(TRUE);
+//           case 27: fprintf(stdout, "string,\t");fprintf(stdout, "%s",token_ptr->token_string);
+//                    fprintf(stdout, ".\n");return(TRUE);
+//           case 29: fprintf(stdout, "character,\t\"");fprintf(stdout, "%s",token_ptr->token_string);
+//                    fprintf(stdout, "\".\n");return(TRUE);
+//           case 32: fprintf(stdout, "keyword,\t\"=>\".\n");return(TRUE);
+//           default: break;
+//       }
+//       return(FALSE);
+// }
 
 /* **********************************************************************
    Function name : get_actual_token
