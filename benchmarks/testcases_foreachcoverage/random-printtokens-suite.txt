@@ -1,0 +1,13 @@
+< inputs/newtst459.tst
+< inputs/uslin.636
+inputs/uslin.1005
+< inputs/ts643
+< inputs/uslin.761
+inputs/jk18
+< inputs/ts771
+< inputs/uslin.642
+< inputs/uslin.1633
+< inputs/tst218
+inputs/uslin.724.noeof
+< inputs/uslin.543
+inputs/garbage/nothing

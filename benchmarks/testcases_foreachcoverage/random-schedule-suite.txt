@@ -1,0 +1,10 @@
+3  10  7  < input/lu113
+0 10 1 < input/add.305
+1 0 5 < input/ct.23
+7 9 8 < input/inp.hf.11
+3 7 4 < input/inp.hf.8
+3 3 1 < input/adt.162
+4 1 4 < input/ft.14
+3  < input/ft.1
+0 3 4 < input/ct.34
+2 7 3 < input/ft.11

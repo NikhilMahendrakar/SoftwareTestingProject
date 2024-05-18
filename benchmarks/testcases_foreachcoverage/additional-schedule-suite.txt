@@ -1,0 +1,7 @@
+2 3 1 < input/ct.31
+7 10 9 < input/ft.6
+8 3 9 < input/inp.hf.16
+6  < input/ft.29
+7 10 5 < input/inp.hf.6
+4 8 8 < input/inp.hf.3
+9 8 5 < input/inp.hf.14

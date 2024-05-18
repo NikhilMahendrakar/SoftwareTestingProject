@@ -1,0 +1,12 @@
+'%A[0-9]?@**[a-c][^0-9]$' '@%&a' < temp-test/672.inp.292.11
+'&11111@nl[^1-6]betweend@t@n%%88*erwhatjust@t@t@tgvariety%$inthestr&& OK here[@@]' < moni/rr2.t
+'[^0-9]?-?[^a--b]*$' < temp-test/206.inp.92.1
+'@=*' ':\>jX/&//[~9HI.'\''XsWI\!6Hav8e`?^Ut6D;zZpJ*\KB2X5*AcRB}pcAc2>EMpaM,=Ad>a$t>2J{6`5VDe{DRw:Lg>\U]wKK/6Y<q%A8mn]@' < input/ruin.1174
+'?--@**[^0-9]-*[-z]@n*$' '&' < temp-test/1026.inp.441.6
+'%n331*3456&&&a%@**rlongstringdoesntmatt@t*t*t*tisbutmustbeverylongwhateverthecharactersaredonesntmatteraslongasthestringistherightlengthandendswiththerightcharacterlkj45?1234ch$rcharcacterswilldojusttypinginsomechars@nandsomeflags@n@t-12345612345?123456-@3@##filedoesntmatt&&eitherasitsneverprocessed&&@@45612345?123456-123456123455?123456-1234561234512345?123456-12345612345?123456-1234561234567890?123456-12345612345?123456-1234561234512345?123456-12345612345?123456-123456[a-c-9]' 'substringdoesntmatter' < input/ruin.1338
+'-[0-9][^-z]@**[^9-B]?[^a--]@[ *[9-B]**' 'a' < moni/f7.inp
+< input/ruin.2
+'-*[^0-9]*$' '&' < temp-test/202.inp.90.6
+'[a--]@@*^-]?-[9-B][^@@]-' 'a@nb@tc' < temp-test/718.inp.310.1
+'*[A-G]?*[A-G]?' '(:,w5(X6)W%qon=YYaq]Q_&nZ~A' < input/ruin.637
+'%*' 'lc_lv50iK\!'\''g`jS`LIK\\!&3W>wi_0pbHri' < input/ruin.1845
